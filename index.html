@@ -1,0 +1,273 @@
+<html>
+  <head>
+    <title>Web page</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel = 'stylesheet' type = 'text/css' href = 'style.css'>
+    <link rel = 'stylesheet' type = 'text/css' href = 'hyphen.css'>
+
+    <script src = 'jquery-1.3.2.min.js'></script>
+  </head>
+  <body>
+      <script src = 'web.js'></script>
+      <div class = 'head'>
+        <div class="grid__item grid__item--2">
+          <h3 id = 'createQuote'>Create Quote</h3>
+        </div>
+        <div class="grid__item grid__item--7">
+          &nbsp
+        </div>
+        <div class="grid__item grid__item--1" id = 'buttoncancel'>
+          <button class="btn btn--tertiary btn--tiny btn--round">Cancel</button>
+        </div>
+        <div class="grid__item grid__item--1" id = 'buttonsave'>
+          <button class="btn btn--success btn--tiny btn--round">Save</button>
+        </div>
+        <div class="grid__item grid__item--1">
+          &nbsp
+        </div>
+      </div>
+
+      <div class = 'body'>
+        <!-- Div circles-->
+        <div class = 'grid' id = 'circle'>
+          <div class="grid__item grid__item--4">
+            &nbsp
+          </div>
+          <div class="grid__item grid__item--1">
+            <div id = 'circle1'class = 'circle'></div>
+          </div>
+          <div class="grid__item grid__item--1">
+            <div id = 'circle2' class = 'circle'></div>
+          </div>
+          <div class="grid__item grid__item--1">
+            <div id = 'circle3' class = 'circle'></div>
+          </div>
+          <div class="grid__item grid__item--4">
+            &nbsp
+          </div>
+        </div>
+        <!-- Quotedetails starts here -->
+        <div class = 'grid' id ='quotedetails'>
+          <div>
+            <div class="grid__item grid__item--3">
+              &nbsp
+            </div>
+            <div class="grid__item grid__item--5" id = 'text'>
+              <center>
+                <h3>Quote Details</h3>
+              </center>
+            </div>
+          </div>
+          <div width = '100%'>
+            <div class = 'grid' id = 'quoteleft' width = '30%' style = 'float : left'>
+              <!--content of Quote details left-->
+              <div class = 'circleborder'>
+                <center>
+                  <h3>pages</h3>
+                  <h4>1/3</h4>
+                </center>
+              </div>
+            </div>
+            <div class = 'grid' id = 'quoteright' width = '70%' style = 'float : right'>
+              <!--content of Quote details right-->
+              <div class = 'grid'>
+                <div class="grid__item grid__item--2">
+                  <label class="label">Quote Name</label>
+                  <input type="text" class="input" placeholder="Enter Quote Name"/>
+                </div>
+                <div class="grid__item grid__item--1">
+                  &nbsp
+                </div>
+                <div class="grid__item grid__item--2">
+                  <label class="label">Customer Name</label>
+                  <input type="text" class="input" placeholder="Enter Customer Name"/>
+                </div>
+              </div>
+              <div class = grid>
+                <div class="grid__item grid__item--2">
+                  <label class="label">Deliver Goods To</label>
+                  <textarea placeholder="Minimum 120 characters" class="input" rows="4"></textarea>
+                </div>
+                <div class="grid__item grid__item--1">
+                  &nbsp
+                </div>
+                <div class="grid__item grid__item--2">
+                  <label class="label">Deliver Goods To</label>
+                  <textarea placeholder="Minimum 120 characters" class="input" rows="4"></textarea>
+                </div>
+              </div>
+              <div class='grid'>
+                <div class="grid__item grid__item--2">
+                  <label class="label">Address verified</label>
+                  <div class="input-icon input-icon--right">
+                    <i class="fa fa-toggle-on input-icon__icon"></i>
+                  </div>
+                </div>
+                <div class="grid__item grid__item--1">
+                  &nbsp
+                </div>
+                <div class="grid__item grid__item--2">
+                  <label class="label">Order Type</label>
+                  <select class="input">
+                    <option value="1"></option>
+                    <option value="2">Amsterdam</option>
+                    <option value="3">United States</option>
+                  </select>
+                </div>
+              </div>
+              <div class='grid'>
+                <div class="grid__item grid__item--2">
+                  <div class="grid__item grid__item--2">
+                    &nbsp
+                  <!--  <button class="btn btn--secondary btn--small btn--round" id = back>back</button> -->
+                  </div>
+                </div>
+                <div class="grid__item grid__item--1">
+                  &nbsp
+                </div>
+                <div class="grid__item grid__item--2">
+                  <div class="grid__item grid__item--2">
+                    <button class="btn btn--success btn--small btn--round" id = 'next1'>NEXT</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Quote details Ends here -->
+        <!-- Additional info -->
+        <div class = 'grid' id ='additionalinfo'>
+          <div>
+            <div class="grid__item grid__item--3">
+              &nbsp
+            </div>
+            <div class="grid__item grid__item--5" id = 'text'>
+              <center>
+                <h3>Additional Info</h3>
+              </center>
+            </div>
+          </div>
+          <div width = '100%'>
+            <div class = 'grid' id = 'additionalinfoleft' width = '30%' style = 'float : left'>
+              <!--content of Additional details left-->
+              <div class = 'circleborder'>
+                <center>
+                  <h3>pages</h3>
+                  <h4>2/3</h4>
+                </center>
+              </div>
+            </div>
+              <div class = 'grid' id = 'additionalinforight' width = '70%' style = 'float : right'>
+              <!--content of additional details right-->
+                <div class = 'grid'>
+                  <div class="grid__item grid__item--2">
+                    <label class="label">Payment Terms</label>
+                    <select class="input">
+                      <option value="1"></option>
+                      <option value="2">Amsterdam</option>
+                      <option value="3">United States</option>
+                    </select>
+                  </div>
+                  <div class="grid__item grid__item--1">
+                    &nbsp
+                  </div>
+                  <div class="grid__item grid__item--2">
+                    <label class="label">Po Number</label>
+                    <input type="text" class="input" placeholder="Enter Customer Name"/>
+                  </div>
+                </div>
+                <div class = 'grid'>
+                  <div class="grid__item grid__item--2">
+                    <label class="label">Expected Delivery Date</label>
+                    <select class="input">
+                      <option value="1"></option>
+                      <option value="2">Amsterdam</option>
+                      <option value="3">United States</option>
+                    </select>
+                  </div>
+                  <div class="grid__item grid__item--1">
+                    &nbsp
+                  </div>
+                  <div class="grid__item grid__item--2">
+                    <label class="label">Requested Date</label>
+                    <select class="input">
+                      <option value="1"></option>
+                      <option value="2">Amsterdam</option>
+                      <option value="3">United States</option>
+                    </select>
+                  </div>
+                </div>
+                <div class='grid'>
+                  <div class="grid__item grid__item--2">
+                    <div class="grid__item grid__item--2">
+                      <button class="btn btn--secondary btn--small btn--round" id = 'back2'>BACK</button>
+                    </div>
+                  </div>
+                  <div class="grid__item grid__item--1">
+                    &nbsp
+                  </div>
+                  <div class="grid__item grid__item--1">
+                    <button class="btn btn--success btn--small btn--round" id = 'next2'>NEXT</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- Additional info ends -->
+        <!-- Note to -->
+        <div class = 'grid' id ='noteto'>
+          <div>
+            <div class="grid__item grid__item--3">
+              &nbsp
+            </div>
+            <div class="grid__item grid__item--5" id = 'text'>
+              <center>
+                <h3>Note To...</h3>
+              </center>
+            </div>
+          </div>
+          <div width = '100%'>
+            <div class = 'grid' id = 'notetoleft' width = '30%' style = 'float : left'>
+            <!-- content of note to left -->
+              <div class = 'circleborder'>
+                <center>
+                  <h3>pages</h3>
+                  <h4>3/3</h4>
+                </center>
+              </div>
+            </div>
+            <div class = 'grid' width = '70%' id  = 'notetoright' style = 'float : right'>
+              <!--content of no to right -->
+              <div class = 'grid'>
+                <div class="grid__item grid__item--2">
+                  <label class="label">Deliver Goods To</label>
+                  <textarea placeholder="Minimum 120 characters" class="input" rows="4"></textarea>
+                </div>
+                <div class="grid__item grid__item--1">
+                  &nbsp
+                </div>
+                <div class="grid__item grid__item--2">
+                  <label class="label">Deliver Goods To</label>
+                  <textarea placeholder="Minimum 120 characters" class="input" rows="4"></textarea>
+                </div>
+              </div>
+                <div class='grid'>
+                  <div class="grid__item grid__item--2">
+                    <div class="grid__item grid__item--2">
+                      <button class="btn btn--secondary btn--small btn--round" id = 'back3'>BACK</button>
+                    </div>
+                  </div>
+                  <div class="grid__item grid__item--1">
+                    &nbsp
+                  </div>
+                  <div class="grid__item grid__item--2">
+                    <button class="btn btn--success btn--small btn--round" id = 'next3'>NEXT</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Note to ends -->
+      </div>
+    </body>
